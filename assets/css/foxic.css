@@ -241,6 +241,41 @@ body {
   position: relative;
 }
 
+.price button:nth-child(2){
+  display: none;
+}
+
+.price:hover button:nth-child(2){
+  display: block;
+}
+
+.price:hover .price-star:nth-child(1){
+  display: none;
+}
+
+#products button{
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  position: absolute;
+  left: 35px;
+  background-color: aqua;
+  border: none;
+  cursor: pointer;
+  padding-top: 7px;
+  transition: 0.3s;
+}
+
+#products button a{
+  text-decoration: none;
+  color: white;
+}
+
+#products button:hover{
+  background-color: black;
+  transition: 0.3s;
+}
+
 #products .my-container h3 {
   padding-top: 50px;
 }
@@ -257,6 +292,23 @@ body {
   height: 396px;
   position: absolute;
   top: 150px;
+  cursor: pointer;
+}
+
+#products .product-hover {
+  overflow: hidden;
+}
+
+#products .product-hover img:nth-child(2) {
+  display: none;
+}
+
+#products .product-hover:hover img:nth-child(2) {
+  display: block;
+}
+
+#products .product-hover:hover img:nth-child(1) {
+  display: none;
 }
 
 #products .about1 {
@@ -299,6 +351,7 @@ body {
   position: absolute;
   top: 150px;
   left: 15px;
+  cursor: pointer;
 }
 
 #products .about2 {
@@ -325,12 +378,12 @@ body {
   color: black;
 }
 
-#products .text .p-hover{
+#products .text .p-hover {
   transition: 0.3s;
   cursor: pointer;
 }
 
-#products .text .p-hover:hover{
+#products .text .p-hover:hover {
   color: rgb(57, 208, 219);
   transition: 0.3s;
 }
@@ -352,6 +405,7 @@ body {
   position: absolute;
   top: 150px;
   left: 15px;
+  cursor: pointer;
 }
 
 #products .about3 {
@@ -395,6 +449,7 @@ body {
   position: absolute;
   top: 150px;
   left: 15px;
+  cursor: pointer;
 }
 
 #products .about4 {
@@ -447,8 +502,28 @@ body {
   padding-top: 40px;
 }
 
+#products-2 .info1,
+.info2,
+.info3,
+.info4,
+.info5 {
+  overflow: hidden;
+}
+
+#products-2 img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#products-2 img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 #products-2 .product1 img {
-  padding-top: 31px;
+  padding-top: 32px;
 }
 
 #products-2 .about1 {
@@ -494,7 +569,7 @@ h5 {
   transition: 0.3s;
 }
 
-#products-2 .info1 button:hover  span{
+#products-2 .info1 button:hover span {
   color: white;
   transition: 0.3s;
 }
@@ -528,7 +603,7 @@ h5 {
   transition: 0.3s;
 }
 
-#products-2 .info2 button:hover  span {
+#products-2 .info2 button:hover span {
   color: white;
   transition: 0.3s;
 }
@@ -605,7 +680,7 @@ h5 {
   transition: 0.3s;
 }
 
-#products-2 .info4 button:hover  span{
+#products-2 .info4 button:hover span {
   color: white;
   transition: 0.3s;
 }
@@ -648,7 +723,7 @@ h5 {
   transition: 0.3s;
 }
 
-#products-2 .info5 button:hover  span{
+#products-2 .info5 button:hover span {
   color: white;
   transition: 0.3s;
 }
@@ -735,8 +810,6 @@ h5 {
 }
 
 #latest-blog h3 {
-  position: absolute;
-  left: 0px;
   transition: 0.3s;
 }
 
@@ -760,6 +833,28 @@ h5 {
   cursor: pointer;
 }
 
+#latest-blog .blog-1,
+.blog-2,
+.blog-3 {
+  width: 436px;
+  height: 254px;
+  overflow: hidden;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+#latest-blog img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#latest-blog img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 #latest-blog .blog-1 h5 {
   position: absolute;
   left: 65px;
@@ -773,14 +868,6 @@ h5 {
 #latest-blog .blog-3 h5 {
   position: absolute;
   left: 95px;
-}
-
-#latest-blog img {
-  width: 450px;
-  height: 220px;
-  position: absolute;
-  left: 0px;
-  top: 80px;
 }
 
 #latest-blog .calendar {
@@ -842,12 +929,15 @@ span {
   transition: 0.3s;
 }
 
-#purchase .gift .text h3,
-p {
+#purchase .gift .text h3 {
   color: white;
 }
 
-#purchase button:hover  p{
+#purchase .gift .text p {
+  color: white;
+}
+
+#purchase button:hover p {
   color: white;
 }
 
@@ -868,7 +958,7 @@ p {
 }
 
 #contact .contact-info h5,
-.pe {
+p {
   color: black;
 }
 
@@ -1027,35 +1117,36 @@ p {
   padding-top: 50px;
 }
 
-#site-end .my-container{
+#site-end .my-container {
   width: 90%;
   background-color: white;
   margin: auto;
 }
 
-#site-end .end-logo img{
+#site-end .end-logo img {
   padding-top: 35px;
 }
 
-#site-end .end-logo{
+#site-end .end-logo {
   cursor: pointer;
 }
 
-#site-end .end-icons{
+#site-end .end-icons {
   padding-top: 25px;
 }
 
-#site-end .end-icons i{
+#site-end .end-icons i {
   margin: 20px;
   font-size: 35px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-#site-end .end-icons i:hover{
+#site-end .end-icons i:hover {
   color: rgb(57, 208, 219);
 }
 
-#site-end a{
+#site-end a {
   position: absolute;
   right: 200px;
   bottom: 27px;
@@ -1064,12 +1155,12 @@ p {
   transition: 0.3s;
 }
 
-#site-end a:hover{
+#site-end a:hover {
   color: rgb(57, 208, 219);
   transition: 0.3s;
 }
 
-#site-end .ppp{
+#site-end .ppp {
   position: absolute;
   right: 75px;
   bottom: 10px;
